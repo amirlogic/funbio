@@ -19,6 +19,7 @@ export default function Home({list}) {
       <Head>
 
         <title>Functional Biology</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Functional biology by SynergyLaunch" />
         <link rel="icon" href="/favicon.ico" />
 
