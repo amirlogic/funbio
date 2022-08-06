@@ -48,6 +48,14 @@ export default function Home({list}) {
         
       </footer>
 
+      <Script id="statcounter-id" strategy="lazyOnload">
+        {`var sc_project=12765042; 
+          var sc_invisible=1; 
+          var sc_security="386e15e2"; `}
+      </Script>
+
+      <Script id="statcounter-js" strategy="lazyOnload" src="https://www.statcounter.com/counter/counter.js" />
+
     </div>
   )
 }

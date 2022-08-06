@@ -6,8 +6,9 @@ import { RetryLink } from "@apollo/client/link/retry";
 
 import { onError } from "@apollo/client/link/error";
 
-
 import Head from 'next/head';
+
+import Script from 'next/script'
 
 
 export default function Article({title,rows,links}) {
@@ -50,6 +51,14 @@ export default function Article({title,rows,links}) {
                 }</div>
 
             </div>
+
+            <Script id="statcounter-id" strategy="lazyOnload">
+                {`var sc_project=12765042; 
+                var sc_invisible=1; 
+                var sc_security="386e15e2"; `}
+            </Script>
+
+            <Script id="statcounter-js" strategy="lazyOnload" src="https://www.statcounter.com/counter/counter.js" />
 
         </>
     )
