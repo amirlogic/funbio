@@ -31,9 +31,9 @@ export default function Home({list}) {
 
       <Header />
 
-      <main className="container mx-auto min-h-screen">
+      <main className="container mx-auto min-h-screen text-lg">
 
-        <h1 className={styles.title}>
+        <h1 className="text-2xl text-center">
           Welcome to FunBio!
         </h1>
 
