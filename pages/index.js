@@ -9,6 +9,7 @@ import { onError } from "@apollo/client/link/error";
 import Head from 'next/head';
 import Script from 'next/script';
 
+import Header from '../parts/header';
 import Footer from '../parts/footer';
 
 import styles from '../styles/Home.module.css'
