@@ -12,7 +12,7 @@ export default function Header() {
 
                 <div className="w-1/5 h-14"></div>
 
-                <div className="w-2/5 h-14">links</div>
+                <div className="w-2/5 h-14"></div>
 
       </div>
     )

@@ -37,7 +37,7 @@ export default function Home({list}) {
           Welcome to FunBio!
         </h1>
 
-        <div>
+        <div className="py-4">
 
           <p>Recent developments in genomics, molecular biology, bioinformatics and healthtech</p>
 
