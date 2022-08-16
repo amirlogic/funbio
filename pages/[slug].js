@@ -8,7 +8,10 @@ import { onError } from "@apollo/client/link/error";
 
 import Head from 'next/head';
 
-import Script from 'next/script'
+import Script from 'next/script';
+
+import Header from '../parts/header';
+import Footer from '../parts/footer';
 
 
 export default function Article({title,rows,links}) {
@@ -21,11 +24,13 @@ export default function Article({title,rows,links}) {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
 
-            <div className="container mx-auto">
+            <Header />
+
+            <main className="container mx-auto min-h-screen mt-2">
 
                 <h1 className="text-lg font-semibold">{title} </h1>
 
-                <div className="my-8 px-6">{
+                <div className="my-8 px-6 font-serif">{
                     
                     rows.map((r,indx)=>{
 
@@ -50,7 +55,9 @@ export default function Article({title,rows,links}) {
 
                 }</div>
 
-            </div>
+            </main>
+
+            <Footer />
 
             <Script id="statcounter-id" strategy="lazyOnload">
                 {`var sc_project=12765042; 

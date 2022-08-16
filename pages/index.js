@@ -9,6 +9,8 @@ import { onError } from "@apollo/client/link/error";
 import Head from 'next/head';
 import Script from 'next/script';
 
+import Footer from '../parts/footer';
+
 import styles from '../styles/Home.module.css'
 
 export default function Home({list}) {
@@ -26,13 +28,23 @@ export default function Home({list}) {
 
       </Head>
 
-      <main className="container mx-auto">
+      <Header />
+
+      <main className="container mx-auto min-h-screen">
 
         <h1 className={styles.title}>
           Welcome to FunBio!
         </h1>
 
         <div>
+
+          <p>Recent developments in genomics, molecular biology, bioinformatics and healthtech</p>
+
+          <p>Each article is only few paragraphs carying the key points</p>
+
+        </div>
+
+        <div id="articles">
           {
             list.map((r,indx)=>{
 
@@ -44,11 +56,7 @@ export default function Home({list}) {
 
       </main>
 
-      <footer className={styles.footer}>
-        
-          Powered by synlaunch.com
-        
-      </footer>
+      <Footer />
 
       <Script id="statcounter-id" strategy="lazyOnload">
         {`var sc_project=12765042; 
