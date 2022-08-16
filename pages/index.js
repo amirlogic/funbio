@@ -33,11 +33,11 @@ export default function Home({list}) {
 
       <main className="container mx-auto min-h-screen text-lg">
 
-        <h1 className="text-2xl text-center">
+        <h1 className="my-4 text-2xl text-center">
           Welcome to FunBio!
         </h1>
 
-        <div className="py-4">
+        <div className="py-8">
 
           <p>Recent developments in genomics, molecular biology, bioinformatics and healthtech</p>
 
