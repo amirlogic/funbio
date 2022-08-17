@@ -2,7 +2,7 @@
 export default function Header() {
 
     return (
-      <div className="flex items-stretch h-20 w-full pt-4 px-6">
+      <div className="flex flex-wrap items-stretch h-20 w-full pt-4 px-6">
 
                 <div className="w-2/5 h-14 text-xl">
                     
