@@ -37,11 +37,11 @@ export default function Home({list}) {
           Welcome to FunBio!
         </h1>
 
-        <div className="py-8">
+        <div className="py-8 text-slate-600">
 
           <p>Recent developments in genomics, molecular biology, bioinformatics and healthtech</p>
 
-          <p>Each article is only few paragraphs carying the key points</p>
+          <p>Articles are only few paragraphs carying the key points</p>
 
         </div>
 
@@ -49,7 +49,7 @@ export default function Home({list}) {
           {
             list.map((r,indx)=>{
 
-              return <div key={`dv${indx}`}><a href={r.slug} key={indx}>{r.title}</a></div>
+              return <div key={`dv${indx}`} className="py-1"><a href={r.slug} key={indx}>{r.title}</a></div>
 
             })
           }
