@@ -101,7 +101,6 @@ export async function getServerSideProps({ params }) {
           uri: process.env.GRAPHQL_SERVER
       }),
 
-      /* */
   ]);
 
   

@@ -12,7 +12,7 @@ export default function Header() {
 
                 <div className="h-14 hidden md:flex-1 md:w-1/5">#2</div>
 
-                <div className="h-14 md:flex-1 md:w-2/5">nav</div>
+                <div className="h-14 md:flex-1 text-slate-300 md:w-2/5">nav</div>
 
       </div>
     )
