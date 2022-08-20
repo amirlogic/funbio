@@ -28,7 +28,7 @@ export default function Article({title,rows,links}) {
 
             <main className="container mx-auto min-h-screen mt-2">
 
-                <h1 className="text-lg font-semibold">{title} </h1>
+                <div className="text-lg font-semibold">{title} </div>
 
                 <div className="my-8 px-6 font-serif">{
                     
@@ -50,7 +50,7 @@ export default function Article({title,rows,links}) {
 
                     links.map((k,indx)=>{
 
-                        return <div key={`dv${indx}`}><a href={k} target="_blank" rel="noreferrer" key={indx}>{k}</a></div>
+                        return <div key={`dv${indx}`} className="my-2 text-slate-500 hover:text-blue-500"><a href={k} target="_blank" rel="noreferrer" key={indx}>{k}</a></div>
                     })
 
                 }</div>
