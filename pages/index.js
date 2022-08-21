@@ -31,7 +31,7 @@ export default function Home({list}) {
 
       <Header />
 
-      <main className="container mx-auto min-h-screen text-lg">
+      <main className="container mx-auto min-h-screen mt-6 text-lg">
 
         <h1 className="my-4 text-2xl text-center text-blue-500">
           Welcome to FunBio!
